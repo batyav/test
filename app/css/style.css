@@ -1,0 +1,91 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+.timer-container {
+  /* Adjust the following styles according to your design needs */
+  margin-top: 1rem; /* Creates space between the buttons and the timer */
+  font-size: 1.5rem; /* Sets the font size for the timer */
+  font-weight: bold; /* Makes the timer text bold */
+  /* Add more styles as needed */
+}
+
+
+.white-text {
+    color: white;
+  }
+
+.video-background video {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .video-background video {
+    /* Растягиваем видео на весь экран */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    
+    /* Размещаем видео по центру экрана */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Добавляем размытие к видео. Настройте значение в зависимости от желаемого эффекта */
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+  }
+  
+  .video-content {
+    position: relative;
+    z-index: 1; /* Убедитесь, что контент находится выше видео */
+    
+    /* Добавьте необходимые стили для размещения вашего контента */
+  }
+
+  .active-gradient {
+    /* Установка градиента для активного состояния */
+    background-image: linear-gradient(to right, #ff4500, #ff6347); /* Оранжевый к красному градиент */
+  }
+
+
+  
+  .video-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.5); /* черный фон с 50% прозрачностью */
+    z-index: 2; /* убедитесь, что z-index меньше, чем у вашего контента */
+  }
+
+  .section-class-name {
+    background-color: #333333; /* HEX - это шестизначный код цвета */
+  }
+
+  .bg-blur {
+    backdrop-filter: blur(10000px); /* Значение размытия можно изменять */
+  }
