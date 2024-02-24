@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="max-w-3xl mx-auto">
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-orange-600 hover:bg-red-900 w-full mb-4 sm:w-auto sm:mb-0" href="https://dexscreener.com/base/0x6ed4d94a9056e8ce619a8822fa913b85dde7d325">Trade and earn</a>
+                 <a class="btn text-white bg-orange-600 hover:bg-red-900 w-full mb-4 sm:w-auto sm:mb-0" href="https://dexscreener.com/base/0x6ed4d94a9056e8ce619a8822fa913b85dde7d325" target="_blank" rel="noopener noreferrer">Trade and earn</a>
                 </div>
                 <div>
                   <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">To learn more</a>
